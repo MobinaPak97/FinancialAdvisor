@@ -21,5 +21,5 @@ public abstract class LegalPartyEntity extends InterestedPartyEntity {
     @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true)
     @LazyCollection(LazyCollectionOption.FALSE)
     @JoinColumn(name = "LEGAL_PARTY_ID")
-    private List<ProductEntity> products;
+    protected List<ProductEntity> products;
 }

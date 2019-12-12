@@ -11,5 +11,5 @@ import java.util.List;
 @Data
 public abstract class LegalPartyDto extends InterestedPartyDto {
 
-    private List<ProductDto> products;
+    protected List<ProductDto> products;
 }
