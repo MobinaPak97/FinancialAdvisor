@@ -1,4 +1,4 @@
-package com.chortke.financialAdvisor.facade.mapper;
+package com.chortke.financialAdvisor.service.utils.mapper;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
  **/
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface NotMap {
+public @interface MapTo {
 
+    Class targetEntity() default void.class;
 }
